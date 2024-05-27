@@ -1,4 +1,8 @@
 data/processed/
 data/TCGA/
+<<<<<<< HEAD
 src/downstream
 src/scRNA
+=======
+src/
+>>>>>>> f11915b6584f4f07fe144b00f6927370dcb6c3bb
