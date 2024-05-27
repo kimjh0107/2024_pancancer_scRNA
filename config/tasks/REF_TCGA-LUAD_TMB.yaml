@@ -1,0 +1,14 @@
+# python preprocessing/preprocessing_TMB_no_string.py -taskConfig ./configs/tasks/REF_TCGA-LUAD_TMB.yaml
+# python ./demo/test_on_in_distribution_dataset.py -seed 42 -train True -modelConfig configs/models/model_GOAT.yaml -taskConfig configs/tasks/TCGA-LUAD_TMB_valid.yaml -outDir result_test
+
+# hdWGCNA feature selection 
+data:
+  multi_omics: False
+  name: TCGA-LUAD_TMB
+  data_split_file: /workspace/TCGA_pipeline/GOAT2.0/datasets/REF_TMB10_LUAD/hdWGCNA_xgboost/data_splits/TCGA-lung-LUAD-TMB-pan_cancer-13_gdc_split0.csv
+  path: /workspace/TCGA_pipeline/GOAT2.0/datasets/REF_TMB10_LUAD/hdWGCNA_xgboost/TCGA-LUAD_tumor_suppressor_genes_split0/
+  gene_network: /workspace/TCGA_pipeline/GOAT2.0/datasets/REF_TMB10_LUAD/hdWGCNA_xgboost/TCGA-LUAD_tumor_suppressor_genes_split0/STRING_human_geneSymbol_confidenceFilt900.tsv
+  gene_list: /workspace/TCGA_pipeline/GOAT2.0/datasets/REF_TMB10_LUAD/hdWGCNA_xgboost/TCGA-LUAD_tumor_suppressor_genes_split0/hdWGCNA_genelist.txt
+  omics_data:
+    transcriptome_data: /workspace/TCGA_pipeline/GOAT2.0/datasets/REF_TMB10_LUAD/hdWGCNA_xgboost/TCGA-LUAD_tumor_suppressor_genes_split0/TPM_TCGA-LUAD.merged.logP_norm.tsv
+  patient_label: /workspace/TCGA_pipeline/GOAT2.0/datasets/REF_TMB10_LUAD/hdWGCNA_xgboost/TCGA-LUAD_tumor_suppressor_genes_split0/Patient_label_TCGA-LUAD_TMB.tsv
