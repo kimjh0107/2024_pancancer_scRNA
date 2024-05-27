@@ -7,5 +7,3 @@ Jongseong Jang<sup>1∗</sup>, PhD
 
   
 🔐 Note: Projects that are currently in progress are set to private for confidentiality reasons.
-# 2024_pancancer_scRNA
-# 2024_pancancer_scRNA
