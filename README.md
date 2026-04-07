@@ -1,6 +1,6 @@
 ## Pan-cancer gene set discovery via scRNA-seq for optimal deep learning based downstream tasks
 
-Jong Hyun Kim<sup>1+</sup>, BS;
+Jong Hyun Kim<sup>1+</sup>, MS;
 Jongseong Jang<sup>1∗</sup>, PhD
 
 <sup>1</sup>LG AI Research, Seoul, South Korea
